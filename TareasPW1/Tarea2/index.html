@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Vivas Pérez">
+    <title>Etiquetas semánticas y de Formateo de Texto</title>
+
+</head>
+<body>
+    <!--Citas cortas-->
+    <p>Como dijo un sabio: "yo solo que no se nada" -Sabio</p>
+    <p>Como dijo un sabio: <q>yo solo que no se nada</q> -Sabio</p><!--Comillas-->
+
+    <!--Citas Largas-->
+    <p>Como dijo un sabio: </p>
+    <blockquote><!--Mucho texto otorga peso semantico-->
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero assumenda quis consequatur reiciendis ea animi eius, odit beatae cumque commodi illo distinctio voluptatibus nisi similique dolores omnis 
+        deserunt ut praesentium".
+
+        -Sabio
+    </blockquote>
+
+    <!--br es un salto de linea en el mismo elemento o entre elementos-->
+    <p>Esta es la primera linea <br> esta es la segunda linea<br>esta es la tercera linea</p>
+    <br>
+    <p>Este es otro parrafo</p>
+
+    <!--Regla horizontal, pinta una linea con salto de linea-->
+    <h2>Sección 1</h2>
+    <p>HOLA esta es la sección 1</p>
+    <hr>
+    <h2>Sección 2</h2>
+    <p>HOLA esta es la sección 2</p>
+
+    <!--Visualizar codigo en una sola linea, code muestra como si fuera código-->
+    <p>Cuando nosotros implementamos <code>print("hola mundo")</code> en python, la consola imprimira: <code>hola mundo</code></p>
+    
+    <!--Visualizar código en varias lineas-->
+    <div style="background-color: aquamarine;">
+    <h3 >Suma de 2 números en python</h3>
+    <p>Este código imprime la suma de 2 numeros en python</p>
+    <pre>
+        #suma de 2 números
+        a=2
+        b=3
+        print("El resultado es: "a+b)
+    </pre><!--Todo adentro imprime con fuente monoespaciada, como si fuera codigo-->
+    </div>
+    <hr>
+    <!--Para escribir caracteres especiales se utilizan las:
+    entidades HTML que permiten avisar al nevagador que vamos
+    a utilizar estos simbolos especiales, comienzan con & y cierran con;
+    como: &lt; y &gt;-->
+    <div>
+    <h3 style="background-color: bisque;">Hola mundo en HTML</h3>
+    <p style="background-color: bisque;">Este código muestra un hola mundo en HTML</p>
+    <pre style="background-color: bisque;">
+        &lt;body&gt;  <!--&lt; es para menor que, &gt; es para mauor que-->
+            &lt;h1&gt;Hola mundo&lt;/h1&gt;
+        &lt;/body&gt;
+    </pre>
+    </div>
+
+    <!--Se puede representar la entrada del teclado mediante la etiqueta <kbd>-->
+        <p>Para copiar un texto, seleccionelo con el mouse y haga <kbd>ctrl</kbd>+<kbd>c</kbd></p>
+
+    <!--Contenedores sirven para agrupar contenido, secciones-->
+    
+
+
+    
+</body>
+</html>
