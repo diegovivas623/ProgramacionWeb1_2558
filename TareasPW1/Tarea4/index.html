@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Vivas Pérez">
+    <title>Imagenes, Media y tablas</title>
+</head>
+<body>
+    <!--Imagenes externas-->
+    <p>Esta imagen esta en la web</p>
+    <img src="https://www.tudn.com/_next/image?url=https%3A%2F%2Fst1.uvnimg.com%2F4b%2Fbd%2Fbef6e2c543288057c3a6560da5dc%2Fgettyimages-962792726.jpg&w=1280&q=75" alt="Cristiano Ronaldo con su 5ta Champions">
+
+    <!--Imagenes internas-->
+    <p>Esta imagen esta en el servidor</p>
+    <img src="imagenes/Cristiano_Ronaldo_2275_(cropped).jpg" alt="Cristiano Ronaldo jugando">
+
+    <!--Insertar video-->
+    <p>Este es un video</p>
+    <video src="media/video.mp4" controls loop></video><!--Controls para controlar el video y loop para que siga reproduciendo-->
+
+    <!--Insertar audio-->
+    <p>Este es un audio</p>
+    <audio src="" controls loop></audio><!--Insertar audio-->
+    <hr>
+    <!--Tablas en HTML -->
+    <table border="1px">
+        <caption>Paises</caption><!--Titulo de tabla-->
+        <tr><!--Un renglon, table row-->
+        <!--td Hace una fila en nuestra tabla-->
+            <th>País</th><!--th es encabezado de tabla-->
+            <th>Capital</th>
+            <th>Idioma</th>
+            <th>Continente</th>
+        </tr>
+        <tr>
+            <td>España</td>
+            <td>Madrid</td>
+            <td>Español</td>
+            <td>Europa</td>
+        </tr>
+        <tr>
+            <td>México</td>
+            <td>CDMX</td>
+            <td>Español</td>
+            <td>America</td>
+        </tr>
+        <tr>
+            <td>Uruguay</td>
+            <td>Montevideo</td>
+            <td>Español</td>
+            <td>America</td>
+        </tr>
+        <tr>
+            <td>Egipto</td>
+            <td>El cairo</td>
+            <td>Árabe</td>
+            <td>Africa</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Canberra</td>
+            <td>Inglés</td>
+            <td>Oceania</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1px">
+        <caption>Evaluciones Escuela</caption>
+        <tr>
+            <td rowspan="2"></td><!--Fusionar filas-->
+            <th colspan="2">1a Eval</th><!--Fusionar columnas-->
+            <th colspan="2">2a Eval</th><!--Fusionar columnas-->
+            <th colspan="2">3a Eval</th><!--Fusionar columnas-->
+        </tr>
+        <tr>
+            <td>Aprobados</td>
+            <td>Suspendidos</td>
+            <td>Aprobados</td>
+            <td>Suspendidos</td>
+            <td>Aprobados</td>
+            <td>Suspendidos</td>
+        </tr>
+        <tr>
+            <td>Informática</td>
+            <td>20</td>
+            <td>2</td>
+            <td>19</td>
+            <td>20</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Matemáticas</td>
+            <td>10</td>
+            <td>12</td>
+            <td>15</td>
+            <td>7</td>
+            <td>12</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1px">
+        <caption>Horario</caption>
+        <tr>
+            <th>Horas</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>8:00-9:00</td>
+            <td rowspan="2">Matemáticas</td>
+            <td>Lengua</td>
+            <td>Música</td>
+            <td></td>
+            <td rowspan="2">Matemáticas</td>
+        </tr>
+        <tr>
+            <td>9:00-10:00</td>
+            <td>Inglés</td>
+            <td>Inglés</td>
+            <td>E.Fisica</td>
+        </tr>
+        <tr>
+            <td>10:00-10:30</td>
+            <td colspan="5">Recreo</td>
+        </tr>
+        <tr>
+            <td>10:30-11:30</td>
+            <td>E. Fisica</td>
+            <td>Valenciano</td>
+            <td rowspan="2">Lengua</td>
+            <td>Informática</td>
+            <td>Inglés</td>
+        </tr>
+        <tr>
+            <td>12:30-13:30</td>
+            <td>Música</td>
+            <td>E.Fisica</td>
+            <td rowspan="2">Matemáticas</td>
+            <td>Informática</td>
+        </tr>
+        <tr>
+            <td>13:30-14:30</td>
+            <td></td>
+            <td>Informática</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>
