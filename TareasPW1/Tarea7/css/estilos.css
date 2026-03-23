@@ -1,0 +1,17 @@
+/* Selector de elementos () */
+h2{
+    color: rgb(255, 0, 0);
+}
+
+/* Selector de elementos(.) */
+.bg-article{
+    background-color: burlywood;
+}
+.color-interno{
+    color: blue;
+}
+
+/*Selector de identificadores (#) */
+#bg-h1{
+    background-color: rgb(149, 128, 188);
+}
