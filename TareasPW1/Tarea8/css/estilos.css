@@ -1,0 +1,63 @@
+/*Selector de clases*/
+
+.rgb{
+    background-color: rgb(170, 168, 30);
+}
+.rgb h2,p{
+    color:rgb(35, 199, 122);
+}
+
+.rgba{
+    background-color: rgba(156, 30, 89, 0.5);
+}
+.rgba h2,p{
+    color:rgba(203, 235, 23, 0.3);
+}
+.hexa{
+    background-color: #d8ca34cc;
+        color: #aae2bd;
+
+}
+
+.hsl{
+    background-color: hsl(143, 82%, 58%);
+    color: hsl(360 100% 50%);
+}
+.hsl p{
+    color: hsl(248, 50%, 55%);
+}
+
+.hsla{
+    background-color: hsla(142, 82%, 58%, 0.1);
+    color: hsla(360 , 100%, 50%, 0.1);
+}
+.hsla p{
+    color: hsla(360 , 100%, 50%, 0.1);
+}
+
+.colores_m{
+    background-color: coral;
+    color: white;
+}
+
+.black{ color: black;}
+.white{ color: white;}
+.salmon{ color: salmon;}
+.blue{ color: blue;}
+.green{ color: lime;}
+
+.blackborder{
+    border-style:dotted; /*Define una linea punteada */
+    border-color: greenyellow;
+    border-width: 5px; /* Define el grosor o ancho del borde*/
+    color: black;
+}
+
+.degradadolineal{
+    color: black;
+    background-image: linear-gradient(to top, red, blue); /* Degradadados de colores*/
+}
+.degradadoradial{
+    color: black;
+    background-image: radial-gradient(yellow, orange);
+}
