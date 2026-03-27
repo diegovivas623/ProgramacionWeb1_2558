@@ -1,0 +1,48 @@
+#encabezado{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.fondo-puma{
+    /*background image permite agregar una iamgen de fondo a contenedor 
+    HTML, permite agregar de fondo (radianes y lineales) */
+    background-image: url(../imagenes/puma.jpg);
+
+    /*background size especifica el tamaño de la imagen de fondo */
+    background-size: cover; /*cover toda, containt otro */
+
+    /*background-repeat, aplica cuando la imagen es más pequeña que su contenedor*/
+    background-repeat: no-repeat;
+
+    /*Background posicion inicial en en su contenedor */
+    background-position: center;
+
+    /*background attachment (scroll y fix) se utilizan para que la imagen se quede fija cuando el usuario se desplaza por la pagina */
+    background-attachment: scroll;
+
+    width: 500px; /* ancho de una imagen */
+    height: 500px; /* alto de una imagen*/
+    background-color: black;
+    color: rgb(9, 231, 224);
+    border: 2px solid pink; /*este es mejor */
+
+}
+
+.fondo-tigre{
+    /*Propiedades abreviadas ()shorthand, permiten abreviar una serie
+    de propiedades en una sola regla de estilos */
+    /*background (image, position, size, repeat), attachment, color */
+    background: linear-gradient(to top, rgb(226, 136, 136,0.5) , rgb(112, 112, 217,0.5)), url(../imagenes/tigre.jpeg) center / contain  no-repeat  scroll;
+        
+    width: 350px; /* ancho de una imagen */
+    height: 350px; /* alto de una imagen*/
+    background-color: black;
+    color: rgb(0, 255, 94);
+    border-style: solid;
+    border-width: 2px;
+    border-color: purple;
+}
+
+
+
