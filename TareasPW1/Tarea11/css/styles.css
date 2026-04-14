@@ -1,0 +1,86 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+/*Orden de estilos para enlaces (LVFHA) */
+/* una pseudo clase para modificar dinamicamente estilos de algo */
+a:link{
+    color: purple;
+    text-decoration: none;
+}
+ /*cuando ya se visito */
+a:visited{
+    color: green;
+}
+
+/*con tabulador */
+a:focus{
+    color: aqua;
+    background-color: black;
+    border: 0.2rem solid gold;
+    text-decoration: none;
+}
+
+/*cuando esta sobrepuesto*/
+a:hover{
+    color:red;
+    background-color: black;
+    border: 0.2rem solid black;
+    text-decoration: none;
+}
+
+/*Cuando se le aprieta */
+a:active{
+    color: rgb(117, 226, 141);
+    text-decoration: none;
+}
+
+#encabezado{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#encabezado h1{
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem goldenrod; 
+}
+
+.navegacion{
+    border: 0.2rem solid red; 
+    background-color: black;
+}
+
+.estados-enlaces{
+    background: black;
+    color: whitesmoke;
+    padding: 0.5rem ;
+}
+
+.estados-enlaces h2{
+    text-align: center;
+}
+
+.estados-enlaces ul{
+    border: 0.2rem double gold;
+    padding-left:0 ;
+}
+
+/* modifica el hijo de ul, estilos*/
+.estados-enlaces ul li{
+    border: 0.1rem solid greenyellow;
+    /*list-style-type (disc, decimal, circle, square, lower-roman,lower-alpha,
+    upper-alpha y none) */
+    /*list-style-type: upper-roman;*/
+    list-style-image: url('https://edube.org/uploads/media/default/0001/04/oedg_icon_regular.png');
+    list-style-position: inside;
+    padding:  0.2rem;
+    margin: 0.5rem;
+    
+}

@@ -1,0 +1,142 @@
+html{
+    font-size: 1rem;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+#encabezado{
+    color: green;
+    background-color: black;
+    /*width y heigth  modifica elemento de un elemento en html*/
+    height: 100px;
+    /*Relleno: es el espaciado entre el contenido del elemento y su borde para definir 
+    sus propiedades se aplica un sentido horario (top, right, bottom y left) */
+    padding: 10px;
+
+    /*Margen es el espacio entre el borde de un elemento y los demas elementos HTML 
+    margin: 10px; */
+
+    /*El borde es el limite de un elemento HTML
+    valores para bodrder-style (solid, dotted, dashed, groove, ridge, inset
+    ouset,hidden y none)
+    */
+    border: 2px groove gold;
+    border-top-color: red;
+    border-right-style: inset;
+    border-radius: 10%;
+
+    /*box shadow se utiliza para crear efectos de sombra 
+    de un elemento html, orden: despl. horizontal, despl.vertical, radio de desenfoque
+    radio de propagación y color*/
+    box-shadow: -5px -5px 5px 5px rgba(37, 22, 171, 0.617);
+
+    /*box-sizing se usa para rellenos de, imagenes y bordes se ajusten a la medida
+con la propiedad border-box
+     */
+    box-sizing: border-box; 
+font-size: 10px;
+}
+
+#encabezado h1{
+    text-align: center;
+    text-decoration: underline;/*underline lo sobraya*/
+    font-size: 3em;
+    font-family: "Bitcount Grid Double", system-ui;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.introduccion{
+    color: blueviolet;
+    background-color: rgb(176, 240, 14);
+    height: 85;
+    padding: 15px;
+    margin-top: 30px ;
+    border: 3px hidden rgb(80, 142, 212);
+    border-bottom-color: rgb(0, 255, 0);
+    border-right-style: inset;
+    border-radius: 20%;
+    box-shadow: -10px 10px 10px -10px chocolate ;
+    box-sizing: border-box;
+}
+
+.introduccion span{
+   /* display: inline-block; */
+    width: 200px;
+    height: 200px;
+    border: 2px solid gold;
+    padding-top: 20px ;
+    margin: 100px;
+}
+
+#contenido-principal{
+    color: rgb(236, 165, 215);
+    height: 200px;
+    margin-top: 50px;
+    padding: 45px;
+    border-bottom-color: yellow;
+    border-radius: 30%;   
+    font-size: 10px;
+}
+
+.propiedades-texto{
+margin-bottom: 5px;
+border: 3px solid rgb(0, 0, 0);
+padding:15px;
+font-size: 2em;
+background-color: rgb(127, 122, 224);
+}
+
+.propiedades-texto h2{
+border: 2px dotted rgb(0, 195, 255);
+text-align: center;
+text-transform: uppercase;
+text-shadow: 2px 2px 3px red;
+}
+
+.texto-fuente{
+    font-size: 2em;
+    padding: 5px;
+}
+
+.propiedades-texto-p{
+text-align: justify;
+line-height: 2.5px;
+letter-spacing: 2px;
+
+}
+
+
+.propiedades-fuente{
+margin-bottom: 5px;
+border: 2px solid rgb(0, 0, 0);
+padding: 5px;
+background-color: rgb(203, 112, 31);
+font-weight: 900;
+
+}
+
+.propiedades-fuente h2{
+border: 2px double rgb(115, 255, 0);
+text-align: center;
+text-transform: uppercase;
+text-shadow: 2px 2px 3px red;
+font-size: 4.3rem;
+font-style: oblique;
+}
+
+.propiedades-fuente-p{
+    text-align: justify;
+    text-transform: capitalize;
+    word-spacing: 5px;
+}
+
