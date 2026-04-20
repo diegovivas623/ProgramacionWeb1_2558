@@ -1,0 +1,130 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom, rgb(158, 216, 78), rgb(206, 236, 54));
+    color: #ffffff; 
+}
+
+#encabezado{
+    border: 0.3rem solid black;
+    padding: 0%;
+    position: relative;
+    height: 35rem;
+    top: 0;
+    width: 100%;
+
+}
+
+h1{
+    position: absolute;
+    left: 15rem;
+    bottom:25rem;
+}
+
+#titulo{
+    right: 3em;
+    bottom:25rem;
+}
+
+#encabezado h1{
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem solid rgb(169, 5, 5) ;
+    
+}
+
+.logo{
+    border: 0.2rem solid goldenrod;
+    width: 10%;
+    height: 20%;
+    border-radius: 40%;
+    box-shadow: 0.5rem  0.9rem  0.5rem ;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+#navegacion{
+    border: 0.5rem solid green;
+    color: white;
+    position: absolute;
+    right: 3em;
+    bottom:25rem;
+    
+}
+
+
+
+#elementos-posicionados{
+    border: 0.2rem solid gold;
+    padding: 1rem;
+    position: relative;
+    height: 300vh;
+}
+
+/*#elementos-posicionados section:nth-child(1){
+    width: 50rem;
+    border: 0.2rem solid black;
+}*/
+
+.contenedor-imagen{
+    width: 20%;
+    height: 20%;
+    border: 0.2rem solid blue;
+}
+
+.contenedor-imagen-batman{
+    position: relative;
+    filter: brightness(3);
+    z-index: 2;
+
+}
+
+.contenedor-imagen-cr7{
+    filter: sepia(50%);
+    position: absolute;
+    top: 0.2rem;
+    right: 3rem;
+    bottom: 10rem;
+    order: 3;
+}
+
+.contenedor-imagen-puma{
+    position: relative;
+    left: 20%;
+    top: 20%;
+    filter: blur(0.2rem);
+    left: 50%;
+}
+
+.contenedor-imagen-spiderman{
+    position: sticky;
+    filter: sepia(50%);
+    filter: contrast(1,1,5);
+    filter: invert(1);
+}
+
+/*absolute lo saca del flujo*/ 
+/*relative en si mismo */
+/*fixed hibrido saca del flujo al elemento html */
+/*si absolute no tiene contenedor padre que no tenga un posicionamiento, nuestro viewport */
+
+/* filter*/
+/*blur (em,rem,px)->aplicar desenfoque */
+/* brightness(0-1,1,1-5) ->aplicar brillo
+/* contrast (0-1,1,1-5)->aplicar contraste 
+grayscale(%) -> convertir el elemento en escala de grises
+invert(1 sin cambios, 0 invierte los colores)
+sepia(%) -> aplica el tono sepia a la imagen
