@@ -1,0 +1,93 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, black, green);
+    color: white;
+    
+}
+
+#encabezado{
+    border: 0.2rem solid gold;
+    text-align: center;
+}
+
+#encabezado h1{
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.contenedor-flotante{
+    border: 0.2rem solid gold;
+
+}
+
+.contenedor-flotante p{
+    font-size: 3rem;
+    
+}
+
+.contenedor-flotante img{
+    width: 10%;
+    border: 0.2rem solid greenyellow;
+    float: inline-start;
+    margin: 1rem 0.5rem 0.5rem 1rem;
+}
+
+.contenedor-flotante2 img{
+    width: 10%;
+    border: 0.2rem solid greenyellow;
+    float: inline-end;
+    margin: 1rem 0.5rem 0.5rem 1rem;
+}
+
+
+.contenedor-flotante2{
+        border: 0.2rem solid gold;
+}
+
+.contenedor-flotante2 p{
+    font-size: 3rem;    
+}
+
+/* Consultas de medios o medias queries
+sirven para definir esitilos a elementos html segun el tamaño de la pantalla de nuestro dispositivo
+gracias a esto se proporciona una herramienta que nos sirve para la creacion de sitios web responsives o adaptables
+-Si se define varias consultas de medios se deben poner en forma descendente segun la medida del dispositivo*/
+
+/*Para moviles (480px), tablets (480px hasta 960px), portatiles pc (960px hasta 1280px) */
+
+@media screen and (max-width: 300px){
+    #encabezado h1{
+        font-size: 2.5rem;
+    }
+    .contenedor-flotante{
+        font-size: 2rem;
+    }
+    .contenedor-flotante2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 250px){
+    #encabezado h1{
+        font-size: 1.5rem;
+    }
+    .contenedor-flotante{
+        font-size: 1rem;
+    }
+    .contenedor-flotante2{
+        font-size: 1rem;
+    }
+    .contenedor-flotante img{
+        width: 5%;
+    }
+
+    .contenedor-flotante2 img{
+        width: 5%;
+    }
+}
