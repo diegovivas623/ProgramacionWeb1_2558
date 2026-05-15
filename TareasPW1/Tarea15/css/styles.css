@@ -1,0 +1,239 @@
+html{
+    font-size:62.5%;
+}
+
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom, rgb(50, 225, 85), rgb(206, 236, 54));
+    color: #ffffff; 
+}
+
+#encabezado{
+    border: 0.3rem solid black;
+    height: 35rem;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+
+
+#titulo{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#encabezado h1{
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem solid rgb(169, 5, 5) ;
+    
+}
+
+.logo{
+    border: 0.2rem solid goldenrod;
+    width: 10%;
+    height: 20%;
+    border-radius: 40%;
+    box-shadow: 0.5rem  0.9rem  0.5rem ;
+
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+#navegacion{
+    border: 0.5rem solid rgb(43, 8, 77);
+    color: white;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#navegacion li{
+    color: rgb(247, 29, 159);
+    
+}
+
+#navegacion ul{
+    display:flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+
+.contenedor-flexible{
+    border: 0.2rem solid red;
+    color:black;
+    padding: 0.5rem;
+    height: 70rem;
+    /* hace un contenedor flexible*/
+    display: flex;
+    /*define el eje principal que va a trabajar flexbox, por defecto eje horizontal
+    (row, column, column-reverse, row-revers) */
+    flex-direction : row;
+/*justify-content: define como se otorga el espacio en el contenedor flexible a los objetos
+flexible de dicho contenedor en el eje seleccionado como main-axis*(x,y)*/
+    justify-content: space-evenly;
+    /*align-items:define como se distriubye el espacio de los objetos flexibles a lo largo 
+    del eje cruzado el cross-axis(x,y)*/
+    align-items: center;
+    /*flex-wrap permite a los elementos si se supera el tamaño
+    especificado aparecer en una linea de abajo uno de otro so el contenedor es mas pequeño
+    que el del elemento del tamaño especificado aparecer en una linea debajo uno de otro;*/
+    flex-wrap: wrap;
+    
+}
+
+.contenedor-flexible article{
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.objeto-flexible1{
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    flex-grow: 1;
+}
+
+.objeto-flexible2{
+    background: linear-gradient(135deg, #24c6dc, #514a9d);
+    flex-grow: 2;
+    text-align: center;
+}
+
+.objeto-flexible2 p{
+    margin-top: 5rem;
+}
+
+.objeto-flexible3{
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    /* flex-shrink: 0; */
+}
+
+.objeto-flexible4{
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    color: black;
+}
+
+.objeto-flexible5{
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}
+
+.titulo-main{
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0.3rem 0.3rem 0.5rem black;
+}
+
+#productos{
+    border: 0.2rem transparent black;
+    display: flex; /*se hacen en linea */
+    flex-direction: row;
+    justify-content: space-evenly; /*alinea imagenes o texto */
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.producto{
+    border: 0.2rem solid black;
+    padding: 1rem;
+    width: 30rem;
+    min-width: 25rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.producto p{
+    text-align: justify;
+}
+
+.producto img{
+    max-width: 100%; /*ancho*/
+    object-fit: contain;
+    width: auto;
+    height: 15rem;
+}
+
+.contenedor-carrusel{
+    width: 90%;
+    margin: 100px auto;
+    border: 5px solid red;
+
+    display: flex;
+    overflow: hidden;
+}
+
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    animation: spin 15s linear infinite;
+    padding-right: 1rem;
+}
+
+.carrusel img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta-carrusel{
+    background-color: rgb(173, 173, 110);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0.6rem 1rem darkorange;
+}
+
+.tarjeta-carrusel h3{
+    margin: 1rem 0 0.5rem 0;
+    font-size: 2rem;
+    color: red;
+}
+
+.tarjeta-carrusel p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/*Para animacion */
+@keyframes spin{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
